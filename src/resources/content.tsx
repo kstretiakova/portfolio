@@ -2,20 +2,20 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  firstName: "Kseniia",
+  lastName: "Tretiakova",
+  name: `Kseniia Tretiakova`,
+  role: "Full Stack Developer",
+  avatar: "/images/avatar.png",
+  email: "kstretiiakova@gmail.com",
+  location: "Europe/Kyiv", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Ukrainian"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
   display: true,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  description: <>Where IT meets AI - my weekly thoughts and projects.</>,
 };
 
 const social: Social = [
@@ -24,17 +24,12 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/kstretiakova",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/kseniia-tretiiakova/",
   },
   {
     name: "Email",
@@ -54,10 +49,10 @@ const home: Home = {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">My</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
-          Featured work
+          Projects
         </Text>
       </Row>
     ),
@@ -65,14 +60,7 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm Selene, a design engineer at{" "}
-      <Logo
-        dark
-        icon="/trademarks/wordmark-dark.svg"
-        style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}
-      />
-      , where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Kseniia, a full-stack developer based in Kyiv, specializing in building scalable and high-performance web applications. 
     </>
   ),
 };
@@ -98,9 +86,7 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        I am a web developer specializing in creating modern and efficient web solutions with a strong focus on user experience and high performance. I have experience working with both frontend and backend development, always paying close attention to performance optimization and code quality.  Currently, I am expanding my expertise in the field of Artificial Intelligence, where I design intelligent systems capable of analyzing and interpreting data to make user interactions with products more valuable and intuitive.
       </>
     ),
   },
@@ -109,44 +95,35 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "DFB",
+        timeframe: "2025 - Present",
+        role: "Wep Developer",
         achievements: [
-          <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
+<>Creation of a multi-vendor e-commerce platform, including a product comparison system</>,  
+<>Custom website development</>,  
+<>WordPress plugin development</>,  
+<>WordPress website creation and maintenance</>,  
+<>Development of a project management tool tailored to the company’s needs</>, 
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
+          
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "MIZLA",
+        timeframe: "2023 - 2025",
+        role: "Web Developer",
         achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
+          <>Design of data-driven applications combining PHP backends with AI-powered analytics</>,  
+<>Integration of AI-powered chatbots and virtual assistants into web platforms</>,  
+<>Development of recommendation systems enhancing user experience with machine learning</>,  
+<>Automation of business workflows using PHP and AI APIs</>,  
+<>Implementation of predictive analytics dashboards for decision-making</>,  
+<>Creation of intelligent web solutions bridging AI models with user-friendly interfaces</>,  
         ],
-        images: [],
+        images: [
+          
+        ],
       },
     ],
   },
@@ -155,77 +132,92 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "GoIT School",
+        description: <>Full-Stack Software Engineering program with a focus on modern web technologies, backend systems, and scalable applications.</>,
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
-    skills: [
-      {
-        title: "Figma",
-        description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
-        ),
-        tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Next.js",
-        description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
-        ),
-        tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },  
-    ],
-  },
+  display: true,
+  title: "Technical Skills",
+  skills: [
+    {
+      title: "Frontend Development",
+      description: (
+        <>Building responsive and user-friendly interfaces with HTML, CSS, JavaScript, and TypeScript.</>
+      ),
+      tags: [
+        { name: "HTML", icon: "html" },
+        { name: "CSS", icon: "css" },
+        { name: "JavaScript", icon: "javascript" },
+        { name: "TypeScript", icon: "typescript" },
+        { name: "React", icon: "react" },
+        { name: "Vue.js", icon: "vue" }
+      ],
+      images: []
+    },
+    {
+      title: "Backend Development",
+      description: (
+        <>Creating scalable server-side applications and APIs using PHP (Symfony), Node.js, and ExpressJS.</>
+      ),
+      tags: [
+        { name: "PHP", icon: "php" },
+        { name: "Symfony", icon: "symfony" },
+        { name: "Node.js", icon: "nodejs" },
+        { name: "ExpressJS", icon: "express" }
+      ],
+      images: []
+    },
+    {
+      title: "Databases",
+      description: (
+        <>Designing and managing relational and NoSQL databases with MySQL, PostgreSQL, and MongoDB.</>
+      ),
+      tags: [
+        { name: "MySQL", icon: "mysql" },
+        { name: "PostgreSQL", icon: "postgresql" },
+        { name: "MongoDB", icon: "mongodb" },
+        { name: "SQL", icon: "sql" }
+      ],
+      images: []
+    },
+    {
+      title: "Version Control",
+      description: (
+        <>Collaborative development and version management with Git, GitHub, and GitLab.</>
+      ),
+      tags: [
+        { name: "Git", icon: "git" },
+        { name: "GitHub", icon: "github" },
+        { name: "GitLab", icon: "gitlab" }
+      ],
+      images: []
+    },
+    {
+      title: "DevOps & Deployment",
+      description: (
+        <>Containerization, CI/CD pipelines, and deployment with Docker and cloud services.</>
+      ),
+      tags: [
+        { name: "Docker", icon: "docker" }
+      ],
+      images: []
+    },
+    {
+      title: "AI & Data",
+      description: (
+        <>Integrating AI-powered solutions and working with data pipelines using Python, Pandas, and scikit-learn.</>
+      ),
+      tags: [
+        { name: "Python", icon: "python" },
+        { name: "Pandas", icon: "pandas" },
+        { name: "scikit-learn", icon: "scikit-learn" }
+      ],
+      images: []
+    }
+  ]
+},
 };
 
 const blog: Blog = {
