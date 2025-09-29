@@ -1,5 +1,5 @@
 import { About, Home, Person, Social, Work } from "@/types";
-import { Line, Logo, Row, Text } from "@once-ui-system/core";
+import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
   firstName: "Kseniia",
@@ -54,7 +54,7 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm Kseniia, a full-stack developer based in Kyiv, specializing in building scalable and high-performance web applications. 
+      I&apos;m Kseniia, a full-stack developer based in Kyiv, specializing in building scalable and high-performance web applications. 
     </>
   ),
 };
