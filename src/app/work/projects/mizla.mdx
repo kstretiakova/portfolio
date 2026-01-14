@@ -1,7 +1,7 @@
 ---
-title: "Development of a dynamic travel website for MIZLA"
-publishedAt: "2024-04-01"
-summary: "Development of a multilingual platform for Mizla, featuring custom PHP plugins, dynamic itineraries, and AI-assisted content creation for luxury travel and yacht experiences."
+title: "Development of a travel metasearch and planning platform for TripMyDream"
+publishedAt: "2025-12-09"
+summary: "Development of a scalable travel platform for TripMyDream, focused on flight and hotel metasearch, flexible discovery, promo deals, and SEO-driven content hubs for destination planning."
 images:
   - "/images/projects/project-02/cover-01.png"
   - "/images/projects/project-02/cover-02.png"
@@ -12,37 +12,37 @@ team:
     role: "Full Stack Developer"
     avatar: "/images/avatar.png"
     linkedIn: "https://www.linkedin.com/in/kseniia-tretiiakova/"
-link: "https://mizla.es/"
+link: "https://en.tripmydream.com/"
 ---
 
 ## Overview
 
-In this project, I focused on automating the often tedious design handover process. The goal was to create a pipeline that converts Figma designs directly into clean, production-ready code. By integrating design tokens, component libraries, and automated workflows, this solution significantly reduced the time spent on translating design assets into code, while maintaining design consistency across the product.
+This project focused on building a high-performance travel platform that combines metasearch discovery with planning content. The goal was to help users compare flight and hotel offers, explore destinations with flexible parameters, and navigate promo deals and guides through a fast, SEO-friendly experience. tripmydream positions itself as a travel service that helps users find, compare, and buy flights and rooms worldwide while providing travel information and guides
 
 ## Key Features
 
-- **Backend with PHP Plugins**: Developed custom PHP plugins to handle complex booking requests, yacht crew forms, and interactive travel itineraries without relying on heavy third-party plugins.
-- **Custom WordPress & WooCommerce Setup**: Built a flexible platform to showcase luxury travel itineraries, yacht charters, retreats, and exclusive experiences. Integrated WooCommerce for booking logic and dynamic product structures.
-- **React and Next.js**: For building the front-end codebase with clean, reusable components.
-- **Styled-Components**: For managing styles dynamically using design tokens.
-- **GitHub Actions**: For automating the pipeline and syncing design changes to the repository.
-- **Content Flexibility**: Created reusable templates and content blocks so that the Mizla team could easily add new tours, retreats, and yacht listings with consistent branding.
-- **Multilingual and SEO Optimization**: Implemented multilingual support and optimized SEO for travel keywords, ensuring visibility across international markets.
+- **Flights & Hotels Metasearch**: Developed search interfaces for flights and hotels with filtering, sorting, pagination, and unified offer normalization across multiple providers.
+- **Flexible Search & Discovery**: Implemented open-date and flexible-destination discovery flows, including price-based browsing and scalable dynamic routes for directions and locations.
+- **Deals & Promo Engine**: Built deal surfaces and promo listings for cheapest offers and curated directions, with reusable blocks for “top deals” and “best prices” sections.
+- **Price Alerts & Monitoring**: Implemented subscription-style price tracking UX, notification-ready logic, and persistence of monitored routes and preferences.
+- **SEO Content Hub**: Created scalable templates for destination guides, travel tips, and landing pages with structured metadata, internal linking modules, and sitemap-ready architecture.
+
 
 ## Technologies Used
 
-- **PHP**: For backend plugin development and custom booking logic.
-- **HTML, CSS, JavaScript**: For frontend customization and responsive UI.
-- **WordPress + WooCommerce**: For CMS and booking/e-commerce features.
-- **Polylang / Loco Translate**: For multilingual capabilities.
-- **MySQL**: For storing bookings, tours, and yacht data.
+- **React and Next.js**: Built the front-end codebase with reusable components and SSR/SSG/ISR patterns for SEO-critical and long-tail pages.
+- **TypeScript**: Added strict typing for offers, destinations, content models, and API clients to improve maintainability and reduce regressions.
+- **API Integrations**: Integrated partner feeds and internal endpoints, including rate-limit handling, retries, caching layers, and schema normalization.
+- **Performance Optimization**: Implemented caching strategies, asset optimization, lazy loading, bundle splitting, and Core Web Vitals-focused delivery.
+- **Localization & International SEO**: Implemented locale-aware routing, hreflang, currency/date localization, and translation-ready content structure for multilingual reach.
+- **CI/CD Automation**: Automated build, test, and deployment workflows with GitHub Actions, including lint/typecheck gates and environment-based configuration.
 
 
 
 ## Challenges and Learnings
 
-The biggest challenge was creating a system flexible enough to handle different types of products (yacht charters, tours, retreats) while keeping the design consistent. Building custom PHP plugins allowed integration of unique booking forms and itinerary layouts. Another learning was balancing automation with luxury branding - using AI to draft content saved time, but required manual curation to maintain Mizla’s high-end tone.
+The primary challenge was balancing large-scale search UX with content-rich destination planning without compromising performance. Another challenge was maintaining SEO stability across dynamic search interfaces and a wide content surface area. The solution required consistent information architecture, reusable UI components, and a strict performance budget to keep key pages fast while still supporting discovery and promo browsing.
 
 ## Outcome
 
-The Mizla platform successfully launched as a polished, scalable solution for luxury travel and yacht experiences. It allows the team to publish new itineraries quickly, attract international clients with multilingual support, and manage bookings seamlessly. AI-assisted workflows reduced content production time, while custom PHP plugins gave Mizla unique features that differentiated them from competitors.
+The platform delivered a unified experience for travel search, promo discovery, and destination planning, aligning with tripmydream’s positioning as a service for finding and comparing flights and hotels and helping users plan trips based on preferences and budget.
